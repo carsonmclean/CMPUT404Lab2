@@ -10,3 +10,5 @@ while True:
     part = clientSocket.recv(1024)
     if (len(part) > 0):
         print part
+    else: # part will be "" when the connection is done
+        exit(0)
